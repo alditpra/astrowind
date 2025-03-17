@@ -1,0 +1,281 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Publikasi Artikel Jurnal Ilmiah Kredibel',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    actions={[
+      { text: 'Lihat Jurnal', href: '#daftarjurnal' },
+      {
+        variant: 'primary',
+        text: 'Biaya Publikasi',
+        href: '#biayapublikasi',
+        icon: 'tabler:arrow-down',
+      },
+    ]}
+    image={{ src: '~/assets/images/aapedia_journal_hero.webp', alt: 'AApedia Jurnal Hero' }}
+  >
+    <Fragment slot="title">
+Tempatnya Publikasi<span class="text-accent dark:text-white highlight"> Jurnal Kredibel</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+        <span class="font-semibold">AApedia</span> berkomitmen untuk selalu meningkatkan kualitas dan kredibilitas publikasi jurnal, menjadikannya rujukan terpercaya bagi pembaca.
+    </Fragment>
+  </Hero>
+
+
+<div class="relative mx-auto max-w-7xl px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default" id="daftarjurnal">
+   <div class="text-center md:mx-auto max-w-3xl mb-8 md:mb-12">
+      <h2 class="font-bold font-heading leading-tighter tracking-tighter text-3xl text-heading md:text-4xl">Daftar Jurnal AApedia</h2>
+      <p class="text-muted text-xl mt-4">Kami menyediakan berbagai pilihan jurnal yang sesuai dengan karya ilmiah Anda, dengan dukungan penuh dari konsultasi hingga penerbitan artikel.</p>
+   </div>
+   <div class="grid gap-4 lg:grid-cols-3 md:gap-6 sm:gap-y-8 sm:grid-cols-2">
+      <div class="flex flex-col backdrop-blur bg-white border dark:bg-slate-900 rounded-lg border-[#ffffff29] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+         <img src="https://ejournal.unperba.ac.id/public/journals/1/pageHeaderLogoImage_en_US.jpg">
+         <div class="font-bold text-xl">Jurnal Ekonomi Bisnis</div>
+         <p class="text-muted mt-2"><span class="font-semibold">AAKOBIS</span>. AAnya itu bisa berarti Article Access / Akses Artikel. Tapi ini contoh aja. Memuat hasil karya tulis di bidang ekonomi dan bisnis.</p>
+         <div class="mt-2"><a class="btn-secondary" href="#daftarjurnal">coming soon</a></div>
+      </div>
+      <div class="flex flex-col backdrop-blur bg-white border dark:bg-slate-900 rounded-lg border-[#ffffff29] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+         <img src="https://ejournal.unperba.ac.id/public/journals/4/pageHeaderLogoImage_en_US.jpg">
+         <div class="font-bold text-xl">Jurnal Kesehatan</div>
+         <p class="text-muted mt-2"><span class="font-semibold">AAKETAN</span> memuat tentang hasil penerbitan atau pemikiran bidang kesehatan yang dilakukan oleh peneliti, akademisi, dan praktisi kesehatan.</p>
+         <div class="mt-2"><a class="btn-secondary" href="#daftarjurnal">coming soon</a></div>
+      </div>
+      <div class="flex flex-col backdrop-blur bg-white border dark:bg-slate-900 rounded-lg border-[#ffffff29] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+        <img src="https://ejournal.unperba.ac.id/public/journals/4/pageHeaderLogoImage_en_US.jpg">
+        <div class="font-bold text-xl">Jurnal Kesehatan</div>
+        <p class="text-muted mt-2"><span class="font-semibold">AAKETAN</span> memuat tentang hasil penerbitan atau pemikiran bidang kesehatan yang dilakukan oleh peneliti, akademisi, dan praktisi kesehatan.</p>
+        <div class="mt-2"><a class="btn-secondary" href="#daftarjurnal">coming soon</a></div>
+     </div>
+   </div>
+</div>
+
+
+
+
+  <!-- Steps2 Widget ****************** -->
+
+<section class="relative not-prose scroll-mt-[72px]" id="alurpublikasi">
+   <div class="text-center md:mx-auto max-w-3xl px-4">
+      <h2 class="font-bold font-heading leading-tighter tracking-tighter text-3xl text-heading md:text-4xl">Alur Publikasi Artikel Jurnal</h2>
+      <p class="text-muted text-xl mt-4">Kirim naskah Anda secara gratis. Pembayaran hanya dilakukan setelah melewati tahap peer-review dan siap dipublikasikan.</p>
+   </div>
+<div class="absolute inset-0 pointer-events-none -z-[1]" aria-hidden="true">
+      <div class="absolute inset-0"></div>
+   </div>
+   <div class="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-6xl">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-12">
+         <div class="w-full lg:w-1/2 gap-8 lg:mr-16 md:gap-12 md:mr-8 mr-0">
+            <div class="text-center md:mx-auto mb-4 md:mb-8 md:text-left rtl:md:text-right m-auto">
+         <center><img src= "https://raw.githubusercontent.com/alditpra/aapedia/main/src/assets/images/aapedia_alur_publikasi.webp" style="width:400px; height:400px;"></center>
+            </div>
+            <div class="w-full text-center md:text-left rtl:md:text-right"></div>
+         </div>
+         <div class="w-full lg:w-1/2 px-0">
+            <ul class="space-y-10">
+               <li class="flex md:-mx-4">
+                  <div class="pr-4 rtl:pl-4 rtl:pr-0 rtl:sm:pl-0 rtl:sm:pr-4 sm:pl-4"><span class="flex justify-center items-center bg-blue-100 font-bold h-16 mx-auto rounded-full text-2xl text-primary w-16">1</span></div>
+                  <div class="pl-4 rtl:pl-0 rtl:pr-4">
+                     <h3 class="text-xl font-semibold font-heading mb-4">Submit Artikel</h3>
+                     <p class="text-muted dark:text-gray-400">Login dan unggah naskah Anda melalui platform jurnal yang disediakan oleh Aapedia, pastikan naskah telah disusun sesuai dengan template dan pedoman penulisan jurnal.</p>
+                  </div>
+               </li>
+               <li class="flex md:-mx-4">
+                  <div class="pr-4 rtl:pl-4 rtl:pr-0 rtl:sm:pl-0 rtl:sm:pr-4 sm:pl-4"><span class="flex justify-center items-center bg-blue-100 font-bold h-16 mx-auto rounded-full text-2xl text-primary w-16">2</span></div>
+                  <div class="pl-4 rtl:pl-0 rtl:pr-4">
+                     <h3 class="text-xl font-semibold font-heading mb-4">Peer Review</h3>
+                     <p class="text-muted dark:text-gray-400">Jika naskah Anda lolos penilaian awal, maka akan dikirimkan ke reviewer untuk dilakukan peer-review. Reviewer akan memberikan masukan, penilaian terhadap karya ilmiah Anda.</p>
+                  </div>
+               </li>
+               <li class="flex md:-mx-4">
+                  <div class="pr-4 rtl:pl-4 rtl:pr-0 rtl:sm:pl-0 rtl:sm:pr-4 sm:pl-4"><span class="flex justify-center items-center bg-blue-100 font-bold h-16 mx-auto rounded-full text-2xl text-primary w-16">3</span></div>
+                  <div class="pl-4 rtl:pl-0 rtl:pr-4">
+                     <h3 class="text-xl font-semibold font-heading mb-4">Dapatkan LOA / Terbit</h3>
+                     <p class="text-muted dark:text-gray-400">Setelah selesai tahap revisi dan pembayaran biaya publikasi, kami akan mengirimkan Letter of Acceptance (LoA) sebagai konfirmasi bahwa artikel Anda siap untuk dipublikasikan.</p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    id="fiturutama"
+    title="Fitur Utama"
+    subtitle="Mengapa memilih AApedia untuk publikasi artikel Anda? Berikut beberapa alasan yang menjadikannya pilihan tepat."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Legalitas',
+        description: 'AApedia adalah penerbit yang terdaftar secara resmi serta memiliki izin operasional. Artikel yang Anda publikasikan memiliki kekuatan hukum yang diakui.',
+      },
+      {
+        title: 'Standar Nasional',
+        description: 'Setiap jurnal memiliki ISSN yang sah oleh Badan Riset Inovasi Nasional, dan terindeks di Google Schoolar serta Garuda',
+      },
+      {
+        title: 'Digital Object Identifier',
+        description: 'DOI unik dari Crossref melalui RJI menunjukkan bahwa artikel ilmiah Anda telah melalui proses publikasi yang serius sehingga memenuhi standar internasional.',
+      },
+      {
+        title: 'Indeks Internasional',
+        description: 'Dengan indeksasi seperti Dimension, artikel yang dipublikasikan akan memiliki visibilitas yang lebih luas dan mudah ditemukan oleh peneliti luar negri.',
+      },
+      {
+        title: 'Tim Editor',
+        description: 'AApedia didukung oleh tim editor dan reviewer yang terdiri dari para ahli di bidangnya, sehingga artikel Anda akan mendapatkan evaluasi yang objektif.',
+      },
+      {
+        title: 'Etika Penelitian',
+        description: 'AApedia menjunjung tinggi etika penelitian serta memastikan bahwa semua artikel ilmiah yang diterbitkan memenuhi standar etika yang berlaku.',
+      },
+      {
+        title: 'Tim Teknis',
+        description: 'Dapatkan bantuan dari tim AApedia untuk mengatasi segala kendala teknis yang Anda hadapi selama proses submit dan publikasi.',
+      },
+      {
+        title: 'Keamanan Data',
+        description: 'AApedia melakukan backup data server secara berkala serta memastikan keamanan sistem jurnal, untuk melindungi data berharga penelitian Anda.',
+      },
+      {
+        title: 'Proofreading & Cek Plagiarisme',
+        description: 'Dapatkan layanan proofreading dan cek plagiarisme (Turnitin) gratis untuk memastikan kualitas dan orisinalitas artikel Anda.',
+      },
+    ]}
+  />
+
+  <!-- Pricing Widget ******************* -->
+  <Prices
+    id="biayapublikasi"
+    title="Biaya Publikasi Artikel Jurnal Ilmiah"
+    subtitle="Biaya terjangkau, transparan, dan tanpa biaya tersembunyi. AApedia cocok untuk berbagai kebutuhan, seperti tugas kuliah, tugas akhir, kenaikan pangkat, dan beban kerja dosen (BKD)."
+    prices={[
+      {
+        title: 'Publikasi Artikel',
+        subtitle: 'Setelah tahap review',
+        price: 12345,
+        period: 'Per Artikel',
+        items: [
+          {
+            description: 'ISSN',
+          },
+          {
+            description: 'Index Garuda',
+          },
+          {
+            description: 'Index Google Scholar',
+          },
+          {
+            description: 'DOI by Crossreff (RJI)',
+          },
+          {
+            description: 'Index Dimensions',
+          },
+          {
+            description: 'Gratis Proofreading',
+          },
+          {
+            description: 'Gratis Cek Plagiasi',
+          },
+        ],
+        callToAction: {
+          text: 'Pilih Jurnal',
+          href: '#daftarjurnal',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'terbatas',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    id="faq"
+    title="Tanya Jawab Terkait Jurnal AApedia"
+    subtitle="Pertanyaan umum yang sering diajukan"
+    columns={1}
+    items={[
+      {
+        title: 'Apakah ada jurnal yang terakreditasi SINTA?',
+        description:
+          'Jurnal yang kami kelola saat ini masih baru dibuat dan belum didaftarkan ke SINTA. Proses akreditasi membutuhkan waktu dan usaha yang signifikan. Kami terus berupaya untuk memenuhi standar akreditasi dan akan menginformasikan jika ada perkembangan terkait akreditasi.',
+      },
+      {
+        title: 'Apakah jurnal AApedia akan didaftarkan SINTA?',
+        description:
+          'Kami berencana untuk mengajukan akreditasi SINTA di masa depan, sehingga memungkinkan untuk artikel jurnal yang Anda kirimkan saat ini akan terindeks di SINTA di kemudian hari.',
+      },
+      {
+        title: 'Kenapa ada biaya publikasi jurnal?',
+        description:
+          'Biaya publikasi artikel jurnal ilmiah diperlukan untuk menutupi biaya proses editorial dan distribusi artikel. Selain itu, biaya ini untuk mendukung pemeliharaan server dan infrastruktur teknis yang diperlukan untuk menjaga kualitas dan keberlanjutan publikasi.',
+      },
+      {
+        title: 'Mengapa biaya publikasi jurnal di AApedia murah?',
+        description:
+          "Biaya terjangkau karena kami mengutamakan efisiensi dan keberlanjutan dalam operasional kami. Kami percaya bahwa aksesibilitas publikasi berkualitas tidak harus mahal, dan kami berkomitmen untuk memfasilitasi publikasi tanpa terlalu membebani penulis secara finansial.",
+      },
+      {
+        title: 'Apakah jurnal AApedia akan bertahan lama?',
+        description:
+          "Ya, kami berkomitmen untuk menjadi platform publikasi yang berkelanjutan. AApedia didirikan oleh komunitas akademisi yang memiliki kebutuhan yang sama dengan Anda dalam publikasi jurnal. Oleh karena itu, kami terus berupaya mengembangkan dan meningkatkan kualitas jurnal agar dapat menjadi rujukan utama bagi para peneliti di bidang pendidikan.",
+      },
+      {
+        title: 'Kapan dan bagaimana cara saya melakukan pembayaran publikasi?',
+        description:
+          'Pembayaran dilakukan setelah artikel Anda telah melewati tahap peer-review dan siap untuk diterbitkan. Kami akan mengirimkan instruksi pembayaran melalui email atau Whatsapp sebelum memberikan LOA.',
+      },
+      {
+        title: 'Saya sudah ada artikel dan masih bingung cara submit di website jurnal',
+        description:
+          'Silahkan hubungi kami via email atau Whatsapp, tim kami akan dengan senang hati membantu proses submisi tanpa di pungut biaya tambahan',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hubungi Kami',
+        href: 'https://wa.me/6287851150691',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      AApedia &nbsp;<br class="block sm:hidden" />Author Assistance
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Hubungi kami sekarang untuk konsultasi gratis &nbsp;<br class="hidden md:inline" />Jangan sampai tugasmu tertunda!
+    </Fragment>
+  </>
+
+</Layout>
