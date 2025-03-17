@@ -16,23 +16,16 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      { text: 'Lihat Jurnal', href: '#daftarjurnal' },
-      {
-        variant: 'primary',
-        text: 'Biaya Publikasi',
-        href: '#biayapublikasi',
-        icon: 'tabler:arrow-down',
-      },
-    ]}
-  >
+  <Hero>
     <Fragment slot="title">
     Daftar Jurnal Ilmiah <span class="text-accent dark:text-white highlight"> Terindeks</span>
     </Fragment>
 
     <Fragment slot="subtitle">
         Temukan jurnal ilmiah terindeks dari berbagai bidang studi, diterbitkan secara profesional untuk mendukung penelitian, akademisi, dan praktisi.    </Fragment>
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+          </Fragment>
   </Hero>
 
 
