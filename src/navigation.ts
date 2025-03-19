@@ -7,14 +7,14 @@ export const headerData = {
       href: getPermalink('/'),
     },
     {
-          text: 'Jurnal',
-          href: getPermalink('/jurnal'),
-   },
-        {
-          text: 'Blog',
-          href: getBlogPermalink(),
-        },
-
+      text: 'Jurnal',
+      href: getPermalink('/jurnal'),
+    },
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
+    },
+  ],
   actions: [{ text: 'Hubungi Kami', href: 'https://wa.me/6287851150691', target: '_blank' }],
 };
 
