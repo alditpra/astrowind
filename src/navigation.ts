@@ -23,7 +23,6 @@ export const footerData = {
     {
       title: 'Beranda',
       links: [
-        { text: 'Legalitas', href: getPermalink('/#legalitas') },
         { text: 'Layanan', href: getPermalink('/#layanan') },
         { text: 'Nilai Plus', href: getPermalink('/#nilaiplus') },
         { text: 'FAQ', href: getPermalink('/#faq') },
